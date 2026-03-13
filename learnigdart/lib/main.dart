@@ -1,9 +1,17 @@
+//import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
+String printMyname() {
+  return '';
+}
+
 void main() {
-  const name = 'foo';
-  name = 'halesh';
   runApp(const MyApp());
+}
+
+void test() {
+  ['hello', 'java', 'c++'];
 }
 
 class MyApp extends StatelessWidget {
