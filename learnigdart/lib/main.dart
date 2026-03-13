@@ -7,11 +7,14 @@ String printMyname() {
 }
 
 void main() {
+  test();
   runApp(const MyApp());
 }
 
 void test() {
-  ['hello', 'java', 'c++'];
+  final names = ['hello', 'java', 'c++'];
+  final foo = names[0];
+  print(foo);
 }
 
 class MyApp extends StatelessWidget {
