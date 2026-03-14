@@ -12,9 +12,11 @@ void main() {
 }
 
 void test() {
-  final names = ['hello', 'java', 'c++'];
-  final foo = names[0];
-  print(foo);
+  var names = {'name': 'tn', 'age': 21};
+  print(names['age']);
+  names['name1'] = 'halesh';
+
+  print(names);
 }
 
 class MyApp extends StatelessWidget {
