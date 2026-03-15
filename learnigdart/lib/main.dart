@@ -12,11 +12,14 @@ void main() {
 }
 
 void test() {
-  var names = {'name': 'tn', 'age': 21};
-  print(names['age']);
-  names['name1'] = 'halesh';
-
-  print(names);
+  List<int?>? n = [1, 2, 3, 4, null];
+  print(n);
+  n.add(5);
+  n = null;
+  print(n);
+  n = [1, 2, 3, 4];
+  n.add(null);
+  print(n);
 }
 
 class MyApp extends StatelessWidget {
