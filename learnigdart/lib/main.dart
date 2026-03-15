@@ -7,19 +7,15 @@ String printMyname() {
 }
 
 void main() {
-  test();
+  test(null, null, null);
   runApp(const MyApp());
 }
 
-void test() {
-  List<int?>? n = [1, 2, 3, 4, null];
-  print(n);
-  n.add(5);
-  n = null;
-  print(n);
-  n = [1, 2, 3, 4];
-  n.add(null);
-  print(n);
+void test(String? fn, String? mn, String? ls) {
+  String? name = fn;
+  name ??= mn;
+  name ??= ls;
+  print(name);
 }
 
 class MyApp extends StatelessWidget {
